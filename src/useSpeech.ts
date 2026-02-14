@@ -1,3 +1,4 @@
+/// <reference types="dom-speech-recognition" />
 import { useRef } from "react";
 
 
