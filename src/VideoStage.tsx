@@ -19,7 +19,7 @@ const STATE_VIDEO_MAP: Partial<Record<ChatState, VideoKey>> = {
 
 
 export default function VideoStage({ state, onVideoEnd, onPlayRef }: Props) {
-    const refs: Record<VideoKey, React.RefObject<HTMLVideoElement>> = {
+    const refs: Record<VideoKey, React.RefObject<HTMLVideoElement | null>> = {
         idle: useRef<HTMLVideoElement>(null),
         greeting: useRef<HTMLVideoElement>(null),
         listening: useRef<HTMLVideoElement>(null),
@@ -30,7 +30,7 @@ export default function VideoStage({ state, onVideoEnd, onPlayRef }: Props) {
         easter_egg: useRef<HTMLVideoElement>(null),
     };
 
-    const allRefs = Object.values(refs) as React.RefObject<HTMLVideoElement>[];
+    const allRefs = Object.values(refs) as React.RefObject<HTMLVideoElement | null>[];
 
     const play = useCallback((key: VideoKey): void => {
         allRefs.forEach((ref) => {

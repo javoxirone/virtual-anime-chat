@@ -6,7 +6,7 @@ A web app that simulates a real-time conversation with a virtual anime character
 
 ## Demo
 
-> 📹 Screen recording: _[Add link here]_
+> 📹 Screen recording: https://youtu.be/x5UI4-vsQWs
 > 🌐 Live demo: _[Add link here]_
 
 ---
