@@ -1,0 +1,79 @@
+# =========================
+# Node
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# Build output
+# =========================
+dist/
+build/
+.vite/
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Logs
+# =========================
+logs
+*.log
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# TypeScript
+# =========================
+*.tsbuildinfo
+
+# =========================
+# Coverage
+# =========================
+coverage/
+
+# =========================
+# Docker
+# =========================
+docker-compose.override.yml
+
+# Ignore local docker volumes/cache
+*.local
+
+# =========================
+# Misc
+# =========================
+.tmp/
+.cache/
+
+# =========================
+# Mac
+# =========================
+.AppleDouble
+.LSOverride
+
+# =========================
+# Video assets (IMPORTANT)
+# =========================
+# DO NOT ignore videos for this task
+# They must be committed
+# public/videos/  <-- keep this in repo
